@@ -1,0 +1,154 @@
+% Copyright 2026 Yoshida Shin
+%
+% This file is part of the ``Repeating Nines''.
+%
+% Permission is granted to copy, distribute, and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation;
+% with no Front-Cover Texts, no Back-Cover Texts, and one Invariant Section: ``This document was written by Shin Yoshida with the aim of contributing to a fairer and safer world.''
+% A copy of the license is included in the section entitled ``GNU Free Documentation License.''
+
+
+\begin{frame}[c]{}{}
+  {\large Rigorous Definition}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Imagine a frivolous game using $a_n$ between two players, A and B.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  First Move:
+
+  \vspace{4ex}
+
+  A: State a real number $k_1$
+
+  \vspace{2ex}
+
+  B: If B can find such an n
+
+  $$n \in \mathbb{N}, k_1 \leqq a_n$$
+
+  the game ends and B wins!
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Second Move:
+
+  \vspace{4ex}
+
+  B: State a real number $k_2 (< k_1)$
+
+  \vspace{2ex}
+
+  A: If A can find such an n
+
+  $$n \in \mathbb{N}, k_2 \leqq a_n$$
+
+  the game ends and A wins!
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Third Move:
+
+  \vspace{4ex}
+
+  A: State a real number $k_3 (< k_2)$
+
+  ...
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Does the rule make sense?
+
+  \vspace{4ex}
+
+  For example, the game might go as follows:
+\end{frame}
+
+\begin{frame}[c]{}{}
+  First Move:
+
+  \vspace{4ex}
+
+  A: $k_1 = \pi$
+
+  ($\pi$ is a real number, it is OK.)
+
+  \vspace{2ex}
+
+  B: (I can't find such an n $\pi \leqq a_n$)
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Second Move:
+
+  \vspace{4ex}
+
+  B: $k_2$ = 1.5
+
+  $(1.5$ is a real number, that is less than $k_1 = \pi$.)
+
+  \vspace{2ex}
+
+  A: (I can't find such an n $1.5 \leqq a_n$)
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Third Move:
+
+  \vspace{4ex}
+
+  A: $k_3$ = -5
+
+  (-5 is a real number, that is less than $k_2$ = 1.5.)
+
+  \vspace{2ex}
+
+  B: $n = 3$
+
+  ($a_3 = 0.999, -5 \leqq a_3$, I won!)
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Do you understand the rules?
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Then, let's consider why is this game ``frivolous.''
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Because player A can always win if they choose the right number in their first move.
+
+  \vspace{4ex}
+
+  Let's call that number ``0.9999...''
+\end{frame}
+
+\begin{frame}[c]{}{}
+  In other words, ``0.9999...'' is a value fulfilling the following conditions.
+
+  \vspace{2ex}
+
+  \begin{itemize}
+  \item $\forall n \in \mathbb{N}, a_n < 0.9999...$
+  \item $\forall k < 0.9999..., \exists n$ $k \leqq a_n$
+  \end{itemize}
+
+  \vspace{2ex}
+
+  If and only if A states such 0.9999... at first,
+
+  A can always win against B.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Note that, I have not proved that
+
+  ``One, or more than one value fulfills those conditions.''
+
+  \vspace{2ex}
+
+  i.e. No such a value may exist!
+\end{frame}
