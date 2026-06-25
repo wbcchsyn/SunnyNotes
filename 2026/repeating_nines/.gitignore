@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.dvi
+*.nav
+*.out
+*.scm
+*.toc
+*.vrb
+*.pdf
+*.png
