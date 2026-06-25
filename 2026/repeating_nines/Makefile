@@ -20,6 +20,7 @@ test: ${TEX} graph
 
 graph: ${DAT} ${PLT}
 	gnuplot graphs/graph0.plt
+	gnuplot graphs/graph1.plt
 
 clean:
 	rm -f *.aux *.log *.dvi *.nav *.out *.snm *.toc *.vrb *.pdf graphs/*.png
