@@ -10,17 +10,22 @@
 
 TEX = *.tex
 STY = *.sty
+DAT = graphs/*.dat
+PLT = graphs/*.plt
 
-test: ${TEX}
-	       platex repeating_nines
-	       dvipdfmx repeating_nines.dvi
-	       rm -f *.aux *.log *.dvi *.nav *.out *.snm *.toc *.vrb
+test: ${TEX} graph
+	platex repeating_nines
+	dvipdfmx repeating_nines.dvi
+	rm -f *.aux *.log *.dvi *.nav *.out *.snm *.toc *.vrb
+
+graph: ${DAT} ${PLT}
+	gnuplot graphs/graph0.plt
 
 clean:
-	       rm -f *.aux *.log *.dvi *.nav *.out *.snm *.toc *.vrb *.pdf
+	rm -f *.aux *.log *.dvi *.nav *.out *.snm *.toc *.vrb *.pdf graphs/*.png
 
-all: ${TEX}
-	       platex repeating_nines
-	       platex repeating_nines
-	       dvipdfmx repeating_nines.dvi
-	       rm -f *.aux *.log *.dvi *.nav *.out *.snm *.toc *.vrb
+all: ${TEX} graph
+	platex repeating_nines
+	platex repeating_nines
+	dvipdfmx repeating_nines.dvi
+	rm -f *.aux *.log *.dvi *.nav *.out *.snm *.toc *.vrb
