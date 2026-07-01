@@ -1,0 +1,192 @@
+% Copyright 2026 Yoshida Shin
+%
+% This file is part of the ``Repeating Nines''.
+%
+% Permission is granted to copy, distribute, and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation;
+% with no Front-Cover Texts, no Back-Cover Texts, and one Invariant Section: ``This document was written by Shin Yoshida with the aim of contributing to a fairer and safer world.''
+% A copy of the license is included in the section entitled ``GNU Free Documentation License.''
+
+
+\begin{frame}[c]{}{}
+  {\large Intuitive Understanding}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Let's consider the following number sequence:
+
+  \vspace{2ex}
+
+  $a_n = 1 - (0.1)^n$
+
+  \vspace{2ex}
+
+  i.e.
+
+  $a_1$ = 0.9
+
+  $a_2$ = 0.99
+
+  $a_3$ = 0.999
+
+  ...
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Do you see that $a_n$ has the following characteristics?
+
+  \vspace{2ex}
+
+  \begin{itemize}
+  \item $\forall n \in \mathbb{N}, a_n < a_{n+1}$
+  \item $\forall n \in \mathbb{N}, a_n < 10$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  You might think,
+
+  ``The second one is wrong.
+
+  It should be $\forall n \in \mathbb{N}, a_n < 1$.''
+
+  \vspace{2ex}
+
+  That is correct, but at the same time, ``$a_n < 10$'' is also correct.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  $\forall n \in \mathbb{N}, a_n < 10$
+
+  \vspace{4ex}
+
+  This is wrong only if
+
+  \vspace{2ex}
+
+  $\exists n \in \mathbb{N}, 10 \leqq a_n$
+\end{frame}
+
+\begin{frame}[c]{}{}
+  I don't think these are so obvious that we need to prove them, but this isn't a math test.
+
+  \vspace{2ex}
+
+  Let's skip the proof.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Next, let's think about what the graph of $a_n$ looks like.
+
+  \vspace{4ex}
+
+  Btw, my explanation in this section is not mathematically rigorous. Try to find the flaw!
+\end{frame}
+
+\begin{frame}[c]{}{}
+  As I mentioned previously,
+
+  \vspace{2ex}
+
+  $a_n$ fulfills the following condition.
+
+  \vspace{4ex}
+
+  $\forall n \in \mathbb{N}, a_n < a_{n+1}$ 
+\end{frame}
+
+\begin{frame}[c]{}{}
+ Then, the graph of $a_n$ must clearly look like either of the following 2 options.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Option 1
+
+  \vspace{2ex}
+
+  $a_n$ increases without an upper limit as n gets larger.
+
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{graphs/graph0.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Option 2
+
+  \vspace{2ex}
+
+  $a_n$ increases as n gets larger, but there is an upper limit.
+
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{graphs/graph1.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Now, remember the other condition:
+
+  \vspace{2ex}
+
+  $\forall n \in \mathbb{N}, a_n < 10$
+
+  \vspace{4ex}
+
+  This obviously conflicts with option 1.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  So, the graph of $a_n$ must be like option 2:
+
+  \vspace{4ex}
+
+  $a_n$ increases as n gets larger, but there is an upper limit.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Btw, did you find the flaw?
+
+  \vspace{4ex}
+
+  The answer is in the next page.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  I should have defined the term ``upper limit.''
+
+  \vspace{4ex}
+
+  But this section is just for intuitive understanding.
+
+  \vspace{2ex}
+
+  Let me skip that.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Intuitively, you can understand that
+
+  \vspace{2ex}
+
+  $a_n$ gets closer and closer to some value as n gets larger.
+
+  \vspace{2ex}
+
+  I want to call this value ``0.9999...''
+
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{graphs/graph2.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  In other words, ``0.9999...'' should be the value that is just slightly larger than any number ``0.'' followed by a lot of ``9s''.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  This value is called ``Limit'' in mathematics.
+
+  \vspace{2ex}
+
+  We usually write it as $$\lim_{n \to \infty} a_n$$.
+\end{frame}

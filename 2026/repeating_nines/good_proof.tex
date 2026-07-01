@@ -1,0 +1,167 @@
+% Copyright 2026 Yoshida Shin
+%
+% This file is part of the ``Repeating Nines''.
+%
+% Permission is granted to copy, distribute, and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation;
+% with no Front-Cover Texts, no Back-Cover Texts, and one Invariant Section: ``This document was written by Shin Yoshida with the aim of contributing to a fairer and safer world.''
+% A copy of the license is included in the section entitled ``GNU Free Documentation License.''
+
+\begin{frame}[c]{}{}
+  {\large Proof 0.9999... = 1}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Before the proof, please accept the fact that $1 \div 3 \times 3 = 1$.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  It is obvious to define ``division'' and ``multiplication''.
+
+  \vspace{2ex}
+
+  But I have to explain many things to do that, for example, ``What is number?''.
+
+  \vspace{2ex}
+
+  It is too much here.
+\end{frame}
+
+\begin{frame}[c]{}{}
+  The definition of $a_n$ includes multiplication.
+
+  \vspace{4ex}
+
+  I cannot calculate lim $a_n$ without multiplication!
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Let's prove 0.9999... = 1 using our definition.
+
+  \vspace{2ex}
+
+  i.e. prove that x fulfills the conditions if and only if x = 1.
+
+  \vspace{2ex}
+
+  \begin{enumerate}
+  \item $\forall n \in \mathbb{N}, a_n < x$
+  \item $\forall k < x, \exists n$ $k \leqq a_n$
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[c]{}{}
+  We need consider cases based on the value of x.
+
+  \vspace{2ex}
+
+  \begin{itemize}
+  \item $x < 1$
+  \item $x = 1$
+  \item $x > 1$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[c]{$x < 1$}{}
+  x does not fulfill the condition 1
+
+  if $x < 1$
+
+  \vspace{2ex}
+
+  1. $\forall n \in \mathbb{N}, a_n < x$
+
+  \vspace{2ex}
+
+  $\because if$ $n > -\log_{10} (1 - x), x < a_n$
+\end{frame}
+
+\begin{frame}[c]{x = 1}{}
+  From the definition,
+
+  $a_n = 1 - (0.1)^n$
+
+  \vspace{2ex}
+
+  $\therefore \forall n \in \mathbb{N}, a_n < 1$
+
+  ($\because 0 < (0.1)^n$)
+\end{frame}
+
+\begin{frame}[c]{x = 1}{}
+  Also,
+
+  \vspace{2ex}
+
+  $\forall k < 1,$
+
+  if $n > -\log_{10} (1 - k), k \leqq a_n$
+
+  \vspace{2ex}
+
+  $\therefore \forall k < 1, \exists n$ $k \leqq a_n$
+\end{frame}
+
+\begin{frame}[c]{x = 1}{}
+  Therefore, x = 1 fulfills both the following conditions.
+
+  \vspace{2ex}
+
+  \begin{enumerate}
+  \item $\forall n \in \mathbb{N}, a_n < x$
+  \item $\forall k < x, \exists n$ $k \leqq a_n$
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[c]{$x > 1$}{}
+  x does not fulfill the condition 2
+
+  if $x > 1$,
+
+  2. $\forall k < x, \exists n$ $k \leqq a_n$
+
+  \vspace{2ex}
+
+  $\because if$ $k = \frac{x + 1}{2}$
+  
+  $k < x \land \forall n \in \mathbb{N}, a_n < k$
+
+  ($\because a_n < 1 \land 1 < k$)
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Let's pause and summarize where we are.
+
+  \vspace{2ex}
+
+  \begin{itemize}
+    \item First, we introduced a frivolous game to define the limit of $a_n$
+    \item Then, we defined the limit of $a_n$ as the winning value in the game
+    \item Next, we rewrote the winning strategy using 2 conditions
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[c]{}{}
+  Here, we have proved
+
+  \vspace{4ex}
+
+  ``x = 1 fulfills those 2 conditions.''
+\end{frame}
+
+\begin{frame}[c]{}{}
+  At the same time, we proved
+
+  \vspace{4ex}
+
+  ``Only if x = 1, x fulfills those conditions.''
+\end{frame}
+
+\begin{frame}[c]{}{}
+  i.e. we have proved
+
+  \vspace{4ex}
+
+  ``0.9999... = 1.''
+\end{frame}
